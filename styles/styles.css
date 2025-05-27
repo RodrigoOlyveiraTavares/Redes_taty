@@ -1,0 +1,99 @@
+/* --- ESTILOS GERAIS PARA O BODY --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    display: flex; /* Transforma o body em um contêiner flex */
+    justify-content: center; /* Centraliza a main horizontalmente */
+    align-items: center; /* Centraliza a main verticalmente */
+    background-color: #e0e6ed; /* Cor de fundo suave para o restante da página */
+}
+img{
+    border-radius: 50%;
+}
+/* --- ESTILOS PARA A TAG <MAIN> --- */
+main {
+    /* 1. Propriedades da Imagem de Fundo */
+    background-image: url('../imagens/back_ground.jpg'); /* **AJUSTE O CAMINHO DA SUA IMAGEM AQUI** */
+    background-size: cover;          /* Faz a imagem cobrir todo o espaço, cortando se necessário */
+    background-position: center center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat;    /* Garante que a imagem não se repita */
+    background-attachment: scroll;   /* A imagem rola com o conteúdo (use 'fixed' para efeito paralaxe) */
+
+    /* 2. Propriedades de Centralização do Conteúdo (Flexbox) */
+    display: flex;           /* Habilita o Flexbox para alinhar os itens filhos */
+    flex-direction: column;  /* Organiza os itens um abaixo do outro */
+    justify-content: center; /* Centraliza os itens verticalmente no eixo principal */
+    align-items: center;     /* Centraliza os itens horizontalmente no eixo cruzado */
+    text-align: center;      /* Centraliza o texto dentro dos elementos filhos */
+
+    /* 3. Estilos de Layout e Aparência da Main */
+    width: 90%;              /* Largura da main (ajuste conforme necessário) */
+    max-width: 1200px;       /* Limita a largura máxima para telas grandes */
+    min-height: 600px;       /* Garante uma altura mínima para ver a imagem de fundo */
+    padding: 40px;           /* Espaçamento interno */
+    border-radius: 15px;     /* Bordas arredondadas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+
+    /* 4. Estilos para Legibilidade do Texto sobre a Imagem */
+    color: #ffffff; /* Cor do texto (geralmente branco para imagens escuras) */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); /* Sombra mais forte para o texto */
+}
+
+/* --- Estilos para o Conteúdo dentro da Main (Melhora a legibilidade sobre a imagem) --- */
+
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 10px; /* Mais espaço antes do botão */
+}
+
+/* --- CLASSE .botao-link REUTILIZADA E AJUSTADA --- */
+.botao-link {
+    display: inline-block; /* Permite definir largura e altura */
+    padding: 15px 35px; /* Espaçamento interno maior */
+    background-color: #28a745; /* Cor de fundo do botão (verde para destaque) */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 30px; /* Bordas bem arredondadas (estilo "pílula") */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 1.2em; /* Tamanho da fonte um pouco maior */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+}
+
+.botao-link:hover {
+    background-color: #218838; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "levantar" */
+}
+
+.botao-link:active {
+    background-color: #1e7e34; /* Cor de fundo ao clicar */
+    transform: translateY(0); /* Retorna à posição normal */
+}
+
+#bt1{ 
+    background-color: red;
+
+}
+#bt2{ 
+    background-color: white;
+    color: black;
+    
+}
+#bt3{ 
+    background-image: linear-gradient(40deg, red, blue);
+}
+#bt4{ 
+    background-color: #fca003;
+    
+}
